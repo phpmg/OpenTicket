@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/backend/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/backend/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/backend/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/backend/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/league/commonmark" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/league/mime-type-detection" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/league/config" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/nunomaduro/collision" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/dflydev/dot-access-data" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/laravel/sail" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/laravel/sanctum" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/tijsverkoyen/css-to-inline-styles" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/spatie/ignition" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/spatie/laravel-ignition" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/spatie/flare-client-php" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/spatie/backtrace" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/uid" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/mailer" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/polyfill-uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/nette/utils" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/nette/schema" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
