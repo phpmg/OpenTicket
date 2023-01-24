@@ -9,9 +9,9 @@ services:
       - MARIADB_USER=bn_myapp
       - MARIADB_PASSWORD=root
       - MARIADB_DATABASE=bitnami_myapp
-  open-ticket_app:
+  open-ticket-backend:
     image: docker.io/bitnami/laravel:9
-    container_name: open-ticket_app
+    container_name: open-ticket-backend
     ports:
       - '8002:8000'
     environment:
@@ -23,3 +23,10 @@ services:
       - './backend:/app'
     depends_on:
       - mariadb
+  open-ticket-frontend:
+    image: docker.io/bitnami/node:18
+    ports:
+      - '3002:3000'
+    container_name: open-ticket-frontend
+    volumes:
+      - './frontend:/app'
