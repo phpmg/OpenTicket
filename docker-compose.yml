@@ -25,8 +25,9 @@ services:
       - mariadb
   open-ticket-frontend:
     image: docker.io/bitnami/node:18
+    command: "sh -c 'npm install && npm start'"
     ports:
-      - '3002:3000'
+      - '3000:3000'
     container_name: open-ticket-frontend
     volumes:
       - './frontend:/app'
