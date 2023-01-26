@@ -1,0 +1,74 @@
+grumphp:
+  process_timeout: 360
+  tasks:
+    phpmd:
+      whitelist_patterns: []
+      exclude:
+        - './vendor'
+      report_format: text
+      ruleset: ['cleancode', 'codesize', 'naming']
+      triggered_by: ['php']
+    phpcs:
+      standard:
+        - PSR1
+        - PSR12
+      encoding: 'utf-8'
+      ignore_patterns:
+        - vendor
+        - database
+        - blade
+        - storage
+        - config
+    phpcpd:
+      exclude: [ 'vendor', 'config', 'tests' ]
+    phplint:
+      exclude: [ ]
+      jobs: ~
+      short_open_tag: false
+      ignore_patterns: [ ]
+      triggered_by: [ 'php', 'phtml', 'php7' ]
+    composer:
+      file: ./composer.json
+      no_check_all: false
+      no_check_lock: false
+      no_check_publish: false
+      no_local_repository: false
+      with_dependencies: false
+      strict: false
+    file_size:
+      max_size: 10M
+      ignore_patterns: [ ]
+    git_blacklist:
+      keywords:
+        - "die("
+        - "var_dump("
+        - "exit;"
+      whitelist_patterns: [ ]
+      triggered_by: [ 'php' ]
+      regexp_type: G
+    phpmnd:
+      directory: .
+      whitelist_patterns: [ ]
+      exclude: [ ]
+      exclude_name: [ ]
+      exclude_path: [ 'tests','vendor' ]
+      extensions: [ ]
+      hint: false
+      ignore_funcs: [ ]
+      ignore_numbers: [ ]
+      ignore_strings: [ ]
+      strings: false
+      triggered_by: [ 'php' ]
+    phpparser:
+      ignore_patterns: [ ]
+      kind: php7
+      visitors: { }
+      triggered_by: [ php ]
+    phpstan:
+      autoload_file: ~
+      configuration: ~
+      level: null
+      force_patterns: [ ]
+      ignore_patterns: [ 'static' ]
+      triggered_by: [ 'php' ]
+      memory_limit: "-1"

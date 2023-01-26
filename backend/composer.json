@@ -45,7 +45,8 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
-        ]
+        ],
+        "code-qa": "./vendor/bin/grumphp run"
     },
     "extra": {
         "laravel": {
@@ -55,7 +56,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpro/grumphp-shim": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
