@@ -37,6 +37,10 @@ composer install
 ```
 php artisan migrate:install
 ```
+### Swagger
+```
+http://localhost:8002/
+```
 ## Para contribuir
 Ao concluir o seu desenvolvimento suba sua branch para o repositório 
 e abra uma PR para develop, assim que sua PR for aprovada estará liberado para merge,
