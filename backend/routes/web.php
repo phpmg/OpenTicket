@@ -2,11 +2,11 @@
 
 use Illuminate\Routing\Router;
 use App\Http\Controllers\Events\EventsController;
+
 /** @var Router $router */
 
 $router->get('/', function () {
     return redirect('/api/documentation');
-
 });
 
 $router->group([

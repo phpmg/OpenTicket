@@ -5,6 +5,7 @@ grumphp:
       whitelist_patterns: []
       exclude:
         - './vendor'
+        - './public'
       report_format: text
       ruleset: ['cleancode', 'codesize', 'naming']
       triggered_by: ['php']
@@ -19,8 +20,9 @@ grumphp:
         - blade
         - storage
         - config
+        - public
     phpcpd:
-      exclude: [ 'vendor', 'config', 'tests' ]
+      exclude: [ 'vendor', 'config', 'tests','public' ]
     phplint:
       exclude: [ ]
       jobs: ~
@@ -51,7 +53,7 @@ grumphp:
       whitelist_patterns: [ ]
       exclude: [ ]
       exclude_name: [ ]
-      exclude_path: [ 'tests','vendor' ]
+      exclude_path: [ 'tests','vendor','public' ]
       extensions: [ ]
       hint: false
       ignore_funcs: [ ]
@@ -69,6 +71,6 @@ grumphp:
       configuration: ~
       level: null
       force_patterns: [ ]
-      ignore_patterns: [ 'static' ]
+      ignore_patterns: [ 'static','public', 'routes/console' ]
       triggered_by: [ 'php' ]
       memory_limit: "-1"
