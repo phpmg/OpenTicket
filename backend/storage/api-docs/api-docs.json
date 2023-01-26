@@ -1,0 +1,19 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Open Ticket",
+        "version": "1.0"
+    },
+    "paths": {
+        "/events": {
+            "get": {
+                "operationId": "6b21f7ea4b3b36b0b08c74e37b798f04",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                }
+            }
+        }
+    }
+}
