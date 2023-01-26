@@ -1,0 +1,6 @@
+{
+    "require": {
+        "zircote/swagger-php": "^4.6",
+        "darkaonline/l5-swagger": "^0.1.0"
+    }
+}

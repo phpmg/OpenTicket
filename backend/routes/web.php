@@ -5,7 +5,7 @@ use App\Http\Controllers\Events\EventsController;
 /** @var Router $router */
 
 $router->get('/', function () {
-    return view('welcome');
+    return redirect('/api/documentation');
 });
 
 $router->group([

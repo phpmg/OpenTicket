@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "My First API Documentation",
+        "contact": {
+            "email": "info@yeagger.com"
+        },
+        "version": "0.1"
+    },
+    "servers": [
+        {
+            "url": "https://foo.localhost:8000/api/",
+            "description": "Learning env"
+        }
+    ],
+    "paths": {
+        "/events": {
+            "get": {
+                "operationId": "6b21f7ea4b3b36b0b08c74e37b798f04",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                }
+            }
+        }
+    }
+}
