@@ -23,7 +23,11 @@ docker compose up -d
 ```
 ### Para entrar no container backend
 ```
-docker exec -it open-ticket_app sh
+docker exec -it open-ticket-backend sh
+```
+### Para entrar no container frontend
+```
+docker exec -it open-ticket-frontend sh
 ```
 ### instale as dependências
 ```
