@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers\Events;
 
 use App\Http\Controllers\Controller;
