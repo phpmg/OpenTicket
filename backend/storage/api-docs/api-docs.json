@@ -5,12 +5,84 @@
         "version": "1.0"
     },
     "paths": {
-        "/events": {
+        "/api/users/auth": {
             "get": {
-                "operationId": "6b21f7ea4b3b36b0b08c74e37b798f04",
+                "summary": "Autentica o usuário",
+                "operationId": "47a92bdeef4c2fedf180183b6771ce50",
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "query",
+                        "description": "Seu Email",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "seuemail@dominio.com"
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "Sua senha",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "123456"
+                    }
+                ],
                 "responses": {
                     "200": {
-                        "description": "Successful operation"
+                        "description": "Usuário autenticado com sucesso!"
+                    },
+                    "404": {
+                        "description": "Usuário ou senha inválidos!"
+                    }
+                }
+            }
+        },
+        "/api/users/sign-on": {
+            "post": {
+                "summary": "Cadastro de usuário",
+                "operationId": "714029e12c26ae7687f9333aedd7607c",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "Seu Nome",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "Fulano de tal"
+                    },
+                    {
+                        "name": "email",
+                        "in": "query",
+                        "description": "Seu email",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "seuemail@seudominio.com"
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "Sua senha",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "example": "123456"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Usuário acadastrado com sucesso!"
+                    },
+                    "400": {
+                        "description": "Houve um problema ao criar o usuário."
                     }
                 }
             }
