@@ -38,6 +38,4 @@ composer install
 php artisan migrate:install
 ```
 ## Para contribuir
-Ao concluir o seu desenvolvimento suba sua branch para o repositório 
-e abra uma PR para develop, assim que sua PR for aprovada estará liberado para merge,
-sua contribuição irá entrar na release seguinte.
+Faça um fork desse repositorio e ao concluir o seu desenvolvimento faça um PR da sua branch para a develop
