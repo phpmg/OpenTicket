@@ -19,6 +19,7 @@ services:
       - DB_PORT=3306
       - DB_USERNAME=bn_myapp
       - DB_DATABASE=bitnami_myapp
+    command: "composer install"
     volumes:
       - './backend:/app'
     depends_on:
